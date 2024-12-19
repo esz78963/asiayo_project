@@ -1,0 +1,3 @@
+grep -io 'twinkle' words.txt | wc -l
+使用 -i 讓搜尋不分大小寫
+使用 -o 只輸出跟目標一致的值
