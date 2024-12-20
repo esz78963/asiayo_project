@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asiayo-web
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: web
+        image: asiayo-web:latest #假設有這image
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: web-storage
+          mountPath: /app/data
+      volumes:
+      - name: web-storage
+        persistentVolumeClaim:
+          claimName: web-pvc
