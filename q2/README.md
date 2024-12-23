@@ -1,7 +1,7 @@
 1. # Q2
 
 此專案包含 Asiayo 的基礎設施配置和 Kubernetes manifest 檔案。
-
+因為平時比較喜歡使用kustomize來管理 manifest檔案 所以使用kustomize
 ## 專案結構
 
 ```
